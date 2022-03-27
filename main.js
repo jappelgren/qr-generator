@@ -8,7 +8,7 @@ const preventRefresh = async (e) => {
     e.preventDefault();
 
     const result = await (
-      await fetch(`http://localhost:??/get-qr-code`, {
+      await fetch(`http://localhost:82/get-qr-code`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ stringToConvert: input.value }),
